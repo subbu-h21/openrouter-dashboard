@@ -1,0 +1,28 @@
+# Secrets: real settings live only in .env
+.env
+.env.*
+!.env.example
+
+# Local data: synced usage database (contains key names, emails, usage), session secret, logs
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.log
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Node / build output
+frontend/node_modules/
+frontend/dist/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
